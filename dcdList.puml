@@ -1,0 +1,24 @@
+@startuml
+class com.example.project21.List {
+~ RecyclerView mRecyclerView
+~ MyListAdapter myListAdapter
+~ ArrayList<HashMap<String,String>> arrayList
+~ String[] Name
+# void onCreate(Bundle)
+}
+class com.example.project21.List$MyListAdapter {
++ ViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(ViewHolder,int)
++ int getItemCount()
+}
+class com.example.project21.List$MyListAdapter$ViewHolder {
+- TextView txtTitle
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.example.project21.List
+com.example.project21.List +.. com.example.project21.List$MyListAdapter
+com.example.project21.Adapter <|-- com.example.project21.List$MyListAdapter
+com.example.project21.List$MyListAdapter +.. com.example.project21.List$MyListAdapter$ViewHolder
+com.example.project21.ViewHolder <|-- com.example.project21.List$MyListAdapter$ViewHolder
+@enduml

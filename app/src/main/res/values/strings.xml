@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Project21</string>
+
+    <string-array name="test">
+        <item>所有食品</item>
+        <item>肉類</item>
+        <item>蔬菜類</item>
+        <item>水果類</item>
+        <item>飲料類</item>
+        <item>其他類</item>
+    </string-array>
+
+    <string-array name="category_options">
+        <item>肉類</item>
+        <item>蔬菜類</item>
+        <item>水果類</item>
+        <item>飲料類</item>
+        <item>其他類</item>
+    </string-array>
+
+</resources>
